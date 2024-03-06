@@ -9,9 +9,7 @@ From: ubuntu:22.04
     curl -k https://bioinf.eva.mpg.de/schmutzi/schmutzi.tar.gz | tar xzvf -
     cd schmutzi && make && make install
 
-%environment
-    export LC_ALL=C
-    export PATH=/usr/games:$PATH
-
 %runscript
-    date | cowsay | lolcat
+    echo "ERROR: There are no default commands"
+    echo "ERROR: Use \"apptainer exec <command>\" to run schmutzi"
+    
